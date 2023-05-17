@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://github.com/rubyeffect/easy_fill/tree/master/lib/easy_fill-0.0.1.min.js"
+    ></script>
+    <title>HICKS LAWN CARE & LANDSCAPING SERVICES</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/appointment.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!--This is a division tag for body container-->
+      <div id="body_header">
+        <!--This is a division tag for body header-->
+        <h1>Appointment Request Form</h1>
+        <!-- <p>Make your appointments more easier</p> -->
+      </div>
+      <form action="/requestAppointment" method="post">
+        <fieldset>
+          <legend><span class="number">1</span>Your basic details</legend>
+          <label for="name">Name*:</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="full name"
+            required
+            pattern="^(\w\w+)\s(\w+)$"
+          />
+
+          <label for="mail">Email*:</label>
+          <input
+            type="email"
+            id="mail"
+            name="user_email"
+            placeholder="abc@xyz.com"
+            required
+          />
+
+          <label for="tel">Contact Num:</label>
+          <input
+            type="tel"
+            id="tel"
+            placeholder="Include country code"
+            name="user_num"
+          />
+
+          Select date and time:
+          <input type="date" id="date" name="date" />
+
+          <input
+            type="time"
+            id="time1"
+            value="(09:00 - 05:00)"
+            min="09:00"
+            max="05:00"
+            name="time"
+          />
+        </fieldset>
+
+        <button type="submit">Request For Appointment</button>
+        <a href="/" class="link-url" title="home">Back Home</a>
+      </form>
+    </div>
+  </body>
+</html>

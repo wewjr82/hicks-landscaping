@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HICKS LAWN CARE & LANDSCAPING SERVICES</title>
+
+    <!-- external CSS link -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="hero_wrapper">
+      <header id="hero_header">
+        <img
+          src="/images/cover.png"
+          alt="HICKS LAWN CARE & LANDSCAPING SERVICES"
+          id="header_logo"
+          loading="lazy"
+        />
+        <div class="header-icon">
+          <span class="b-fa fa fa-phone"></span>
+          <div id="header_number"><h4>757-610-2019</h4></div>
+        </div>
+        <div id="header_hours_wrapper">
+          <span class="b-fa fa fa-clock-o"></span>
+          <div id="header_hours">
+            <h4>
+              Monday - Saturday <br />
+              10:00am - 5:00pm <br />Sunday Closed
+            </h4>
+          </div>
+        </div>
+
+        <div id="head-soc">
+          <ul>
+            <li id="sub"><a href="">Subscribe</a></li>
+            <li id="fb"><a href="">Facebook</a></li>
+            <li id="twit">
+              <a href="https://twitter.com/ready_to_DEV">Twitter</a>
+            </li>
+            <li id="li">
+              <a href="https://www.linkedin.com/in/williamthedev/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <nav id="menu">
+        <input
+          type="checkbox"
+          id="responsive-menu"
+          onclick="updatemenu()"
+        /><label></label>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/faq">Questions & Answers</a></li>
+          <li><a href="/appointment">Make An Appointment</a></li>
+        </ul>
+      </nav>
+      <div id="hero_content">
+        <div id="hero_content_info">
+          <h1 id="hero_content_info_title">
+            LET US CARE & <br />
+            SHARE YOUR LAWN
+          </h1>
+          <p id="hero_content_p">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis nihil officiis <br />
+            ex laboriosam reprehenderit dignissimos magnam similique quas?
+          </p>
+          <div id="button_wrapper">
+            <a href="/services"
+              ><button class="bn-32 bn32">LEARN MORE</button></a
+            >
+            <a href="/appointment"
+              ><button class="bn-32 bn32">CONTACT US</button></a
+            >
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="copyright" align="center">
+          &copy; 2023 - 2023 William White
+        </div>
+        <script>
+          (function () {
+            let cpr = document.getElementById("copyright");
+            cpr.innerHTML =
+              "&copy; 2023 - " +
+              new Date().getFullYear() +
+              " William White - All Rights Reserved.";
+          })();
+        </script>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

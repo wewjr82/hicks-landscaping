@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HICKS LAWN CARE & LANDSCAPING SERVICES</title>
+
+    <!-- external CSS link -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="gallery_wrapper">
+       <nav id="menu">
+        <input
+          type="checkbox"
+          id="responsive-menu"
+          onclick="updatemenu()"
+        /><label></label>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/faq">Questions & Answers</a></li>
+          <li><a href="/appointment">Make An Appointment</a></li>
+        </ul>
+      </nav>
+      <header id="gallery_header">
+        <h2 id="gallery_header_title">
+          Project <span id="gallery_header_title_green">Gallery</span>
+        </h2>
+      </header>
+      <div id="gallery_slider" class="hcg-slider">
+        <div class="hcg-slide-container">
+          <div class="hcg-slider-body">
+            <a class="hcg-slides animated" style="display: flex">
+              <span class="hcg-slide-number">1/5</span>
+              <img
+                src="https://images.unsplash.com/photo-1551855350-c86caeaf8707?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI2fHxnYXJkZW5pbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="garden care"
+              />
+              <span class="hcg-slide-text">Garden Care</span>
+            </a>
+          </div>
+          <a href="#" id="hcg-slide-prev">❮</a>
+          <a href="#" id="hcg-slide-next">❯</a>
+        </div>
+        <div class="hcg-slide-dot-control"></div>
+      </div>
+
+      <footer>
+        <div id="copyright" align="center">
+          &copy; 2023 - 2023 William White
+        </div>
+        <script>
+          (function () {
+            let cpr = document.getElementById("copyright");
+            cpr.innerHTML =
+              "&copy; 2023 - " +
+              new Date().getFullYear() +
+              " William White - All Rights Reserved.";
+          })();
+        </script>
+      </footer>
+    </div>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
