@@ -92,6 +92,7 @@ footer {
   flex-grow: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  font-size: 1.072rem;
 }
 .menu {
   background: #000;
