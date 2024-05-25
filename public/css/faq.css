@@ -2,7 +2,7 @@
 footer {
   background-color: #085429;
 }
-#menu input,
+.menu input,
 body {
   margin: 0;
   padding: 0;
@@ -21,31 +21,20 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-.clear {
-  clear: both;
-}
 body {
-  font-size: 160%;
+  font-size: 1.6rem;
   line-height: 1.5;
   overflow-x: hidden;
 }
-.faq__header-title {
+.faq-header > h2 {
   font-size: clamp(26px, 5vw, 40px);
   color: #000;
   margin-bottom: 30px;
   margin-top: 120px;
   text-align: center;
 }
-#menu,
-#menu a,
+.menu,
+.menu a,
 .faq__label,
 footer {
   color: #fff;
@@ -84,7 +73,7 @@ footer {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
-#menu {
+.menu {
   background: #000;
   background: -webkit-gradient(
     linear,
@@ -99,86 +88,85 @@ footer {
   padding-left: 18px;
   border-radius: 0;
 }
-#menu li,
-#menu ul {
+.menu li,
+.menu ul {
   margin: 0 auto;
   padding: 0;
   list-style: none;
 }
-#menu ul {
+.menu ul {
   width: 100%;
   margin-left: 20%;
 }
-#menu li {
+.menu li {
   float: left;
   display: inline;
   position: relative;
 }
-#menu a,
-#menu li:hover ul.sub-menus {
+.menu a,
+.menu li:hover ul.sub-menus {
   display: block;
 }
-#menu label,
-#menu ul.sub-menus {
+.menu label,
+.menu ul.sub-menus {
   position: absolute;
   display: none;
 }
-#menu a {
+.menu a {
   line-height: 55px;
   padding: 0 14px;
   text-decoration: none;
-  font-size: 16px;
   text-transform: uppercase;
 }
-#menu a.dropdown-arrow:after {
+.menu a.dropdown-arrow:after {
   content: "\25BE";
   margin-left: 5px;
 }
-#menu li a:hover {
+.menu li a:hover {
   color: #c1cc2d;
   background: #000;
 }
-#menu input {
+.menu input {
   display: none;
   height: 55px;
   width: 100%;
   opacity: 0;
   cursor: pointer;
 }
-#menu label {
+.menu label {
   line-height: 55px;
   text-align: center;
   left: 35px;
 }
-#menu label:before {
+.menu label:before {
   font-size: 1.6em;
   content: "\2261";
   margin-left: 20px;
 }
-#menu ul.sub-menus {
+.menu ul.sub-menus {
   height: auto;
   overflow: hidden;
   width: 170px;
   background: #444;
   z-index: 99;
 }
-#menu ul.sub-menus li {
+.menu ul.sub-menus li {
   display: block;
   width: 100%;
 }
-#menu ul.sub-menus a {
+.menu ul.sub-menus a {
   color: #fff;
   font-size: 16px;
 }
-#menu ul.sub-menus a:hover {
+.menu ul.sub-menus a:hover {
   background: #f2f2f2;
   color: #444;
 }
 @media screen and (max-width: 800px) {
-  #menu {
+  .menu {
     position: relative;
   }
-  #menu ul {
+  .menu ul {
     background: #111;
     position: absolute;
     top: 100%;
@@ -188,53 +176,53 @@ footer {
     height: auto;
     display: none;
   }
-  #menu input:checked ~ ul,
-  #menu li {
+  .menu input:checked ~ ul,
+  .menu li {
     display: block;
   }
-  #menu ul.sub-menus {
+  .menu ul.sub-menus {
     width: 100%;
     position: static;
   }
-  #menu ul.sub-menus a {
+  .menu ul.sub-menus a {
     padding-left: 30px;
   }
-  #menu li {
+  .menu li {
     float: none;
     width: auto;
   }
-  #menu input,
-  #menu label {
+  .menu input,
+  .menu label {
     position: absolute;
     top: 0;
     left: 0;
     display: block;
   }
-  #menu input {
+  .menu input {
     z-index: 4;
   }
-  #menu input:checked + label {
+  .menu input:checked + label {
     color: #fff;
   }
-  #menu input:checked + label:before {
+  .menu input:checked + label:before {
     content: "\00d7";
   }
 }
-#questions_green {
+.faq-header span {
   color: #085429;
 }
 @media only screen and (max-width: 414px) {
-  .faq__header-title {
+  .faq-header > h2 {
     margin-top: 0;
   }
 }
 @media screen and (max-width: 640px) {
-  .faq__header-title {
+  .faq-header > h2 {
     margin: 0;
   }
 }
 @media screen and (max-width: 896px) {
-  .faq__header-title {
+  .faq-header > h2 {
     margin: 0;
   }
 }
