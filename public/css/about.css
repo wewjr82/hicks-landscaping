@@ -347,11 +347,11 @@ footer {
 .about-content div + a:visited {
   color: #8d86b3;
 }
-.about-content-right-wrapper {
+.about-content > div + div {
   padding-top: 95px;
   padding-left: 30px;
 }
-.about-content-right-wrapper > div {
+.about-content > div + div > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,68 +376,109 @@ footer {
   font-size: 2rem;
   color: #8d86b3;
 }
-@media only screen and (max-width: 414px) {
-  .about-header {
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .menu {
     width: 100%;
   }
-  .about-header > h2,
-  .about-content-info-wrapper {
-    text-align: center;
-  }
-  .about-content > div,
-  .bn14 {
-    display: none;
-  }
-  .about-content-eight-inner-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .about-content-right-info-p {
-    color: #6f6f6f;
-    font-size: large;
-  }
-}
-@media screen and (max-width: 640px) and (orientation: landscape) {
   .about-header {
     width: 100%;
   }
   .about-header > h2 {
     text-align: center;
   }
-  .about-content > div,
-  .bn14 {
+  .about-header > div {
     display: none;
   }
-  .about-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  .about-content > :first-child {
+    display: none;
+  }
+  .about-content > div + div {
+    width: 100%;
+    padding-left: 0;
+  }
+  .about-content > div + div > div {
+    display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center; /* Centers items horizontally */
     align-items: center;
   }
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
 }
-@media screen and (max-width: 896px) and (orientation: landscape) {
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  .menu {
+    width: 100%;
+  }
   .about-header {
     width: 100%;
   }
-  .about-content > div,
-  .bn14 {
+  .about-header > h2 {
+    text-align: center;
+  }
+  .about-header > div {
     display: none;
   }
-  .about_content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  .about-content > :first-child {
+    display: none;
+  }
+  .about-content > div + div {
+    width: 100%;
+    padding-left: 0;
+  }
+  .about-content > div + div > div {
+    display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center; /* Centers items horizontally */
     align-items: center;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+}
+/* Tablet (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+  .about-header {
+    width: 100%;
+  }
+  .about-header > h2 {
+    text-align: center;
+  }
+  .about-header > div {
+    display: none;
+  }
+  .about-content > :first-child {
+    display: none;
+  }
+  .about-content > div + div {
+    width: 100%;
+    padding-left: 0;
+  }
+  .about-content > div + div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+  }
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
   }
 }

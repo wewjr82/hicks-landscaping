@@ -310,6 +310,8 @@ span.b-fa {
   color: #fff;
   background-position: 100%;
 }
+
+
 @media only screen and (max-width: 768px) {
   #hero_wrapper {
     display: block;
@@ -321,6 +323,9 @@ span.b-fa {
     background-color: #085429;
   }
   #hero_menu {
+    display: none;
+  }
+  .hero-content > div > h1 + p {
     display: none;
   }
   footer {
