@@ -103,12 +103,10 @@ footer {
   display: inline;
   position: relative;
 }
-.menu a,
-.menu li:hover ul.sub-menus {
+.menu a {
   display: block;
 }
-.menu label,
-.menu ul.sub-menus {
+.menu label {
   position: absolute;
   display: none;
 }
@@ -117,10 +115,6 @@ footer {
   padding: 0 14px;
   text-decoration: none;
   text-transform: uppercase;
-}
-.menu a.dropdown-arrow:after {
-  content: "\25BE";
-  margin-left: 5px;
 }
 .menu li a:hover {
   color: #c1cc2d;
@@ -143,25 +137,6 @@ footer {
   content: "\2261";
   margin-left: 20px;
 }
-.menu ul.sub-menus {
-  height: auto;
-  overflow: hidden;
-  width: 170px;
-  background: #444;
-  z-index: 99;
-}
-.menu ul.sub-menus li {
-  display: block;
-  width: 100%;
-}
-.menu ul.sub-menus a {
-  color: #fff;
-  font-size: 16px;
-}
-.menu ul.sub-menus a:hover {
-  background: #f2f2f2;
-  color: #444;
-}
 @media screen and (max-width: 800px) {
   .menu {
     position: relative;
@@ -179,13 +154,6 @@ footer {
   .menu input:checked ~ ul,
   .menu li {
     display: block;
-  }
-  .menu ul.sub-menus {
-    width: 100%;
-    position: static;
-  }
-  .menu ul.sub-menus a {
-    padding-left: 30px;
   }
   .menu li {
     float: none;

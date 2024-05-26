@@ -1,5 +1,4 @@
 .about-content,
-#about_header,
 #about_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,12 +8,10 @@ body {
   padding: 0;
   margin: 0;
 }
-.bn32,
 footer {
   background-color: #085429;
 }
-.bn14,
-.bn32 {
+.bn14 {
   font-size: 1em;
   color: #fff;
 }
@@ -124,12 +121,10 @@ footer {
   float: left;
   display: inline;
 }
-.menu a,
-.menu li:hover ul.sub-menus {
+.menu a {
   display: block;
 }
-.menu label,
-.menu ul.sub-menus {
+.menu label {
   position: absolute;
   display: none;
 }
@@ -139,10 +134,6 @@ footer {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-}
-.menu a.dropdown-arrow:after {
-  content: "\25BE";
-  margin-left: 5px;
 }
 .menu li a:hover {
   color: #c1cc2d;
@@ -165,24 +156,6 @@ footer {
   content: "\2261";
   margin-left: 20px;
 }
-.menu ul.sub-menus {
-  height: auto;
-  overflow: hidden;
-  width: 170px;
-  background: #444;
-  z-index: 99;
-}
-.menu ul.sub-menus li {
-  display: block;
-  width: 100%;
-}
-.menu ul.sub-menus a {
-  color: #fff;
-}
-.menu ul.sub-menus a:hover {
-  background: #f2f2f2;
-  color: #444;
-}
 @media screen and (max-width: 800px) {
   .menu {
     position: relative;
@@ -200,13 +173,6 @@ footer {
   .menu input:checked ~ ul,
   .menu li {
     display: block;
-  }
-  .menu ul.sub-menus {
-    width: 100%;
-    position: static;
-  }
-  .menu ul.sub-menus a {
-    padding-left: 30px;
   }
   .menu li {
     float: none;
@@ -229,51 +195,10 @@ footer {
     content: "\00d7";
   }
 }
-#hero_content {
-  background-image: url("/css/imgs/andres-siimon-zfwyrIA6bFw-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.63);
-  background-blend-mode: multiply;
-}
-#hero_content_info {
-  padding: 50px;
-  color: #fff;
-  display: inline-block;
-  margin-top: 60px;
-}
-#hero_content_info_title {
-  font-size: 6rem;
-  line-height: 1.2;
-  margin: 0;
-}
-#hero_content_p {
-  font-size: larger;
-  line-height: 1.5;
-}
-.bn32 {
-  border-color: #eeeaea;
-  padding: 0.6em 2.3em;
-  cursor: pointer;
-  background-image: -o-linear-gradient(45deg, transparent 50%, #000 50%);
-  background-image: linear-gradient(45deg, transparent 50%, #000 50%);
-  background-position: 25%;
-  background-size: 400%;
-  -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-  -o-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-  margin-left: 10px;
-}
 .about-content h4 + div,
 .bn14 {
   background-color: #5b833c;
   display: inline-block;
-}
-.bn32:hover {
-  color: #fff;
-  background-position: 100%;
 }
 .about-header > h2 {
   color: #fff;

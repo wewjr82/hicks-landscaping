@@ -68,15 +68,6 @@ body {
   justify-content: space-around;
   color: #fff;
 }
-#hero_menu {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-}
 footer {
   position: fixed;
   bottom: 0;
@@ -135,18 +126,6 @@ span.b-fa {
   background: url(/images/icons/socia-med.png) no-repeat;
   display: block;
 }
-#head-soc li#g a {
-  background-position: 0 0;
-}
-#head-soc li#g a:hover {
-  background-position: 0 -32px;
-}
-#head-soc li#rss a {
-  background-position: -32px 0;
-}
-#head-soc li#rss a:hover {
-  background-position: -32px -32px;
-}
 #head-soc li#sub a {
   background-position: -64px 0;
 }
@@ -170,12 +149,6 @@ span.b-fa {
 }
 #head-soc li#li a:hover {
   background-position: -160px -32px;
-}
-#head-soc li#youtube a {
-  background-position: -192px 0;
-}
-#head-soc li#youtube a:hover {
-  background-position: -192px -32px;
 }
 .menu {
   background: #000;
@@ -207,12 +180,10 @@ span.b-fa {
   display: inline;
   position: relative;
 }
-.menu a,
-.menu li:hover ul.sub-menus {
+.menu a {
   display: block;
 }
-.menu label,
-.menu ul.sub-menus {
+.menu label {
   position: absolute;
   display: none;
 }
@@ -222,10 +193,6 @@ span.b-fa {
   text-decoration: none;
   font-size: 1.6rem;
   text-transform: uppercase;
-}
-.menu a.dropdown-arrow:after {
-  content: "\25BE";
-  margin-left: 5px;
 }
 .menu li a:hover {
   color: #c1cc2d;
@@ -248,24 +215,51 @@ span.b-fa {
   content: "\2261";
   margin-left: 20px;
 }
-.menu ul.sub-menus {
-  height: auto;
-  overflow: hidden;
-  width: 170px;
-  background: #444;
-  z-index: 99;
-}
-.menu ul.sub-menus li {
-  display: block;
-  width: 100%;
-}
-.menu ul.sub-menus a {
-  color: #fff;
-  font-size: 1.6rem;
-}
-.menu ul.sub-menus a:hover {
-  background: #f2f2f2;
-  color: #444;
+@media screen and (max-width: 800px) {
+  .menu {
+    position: relative;
+  }
+  .menu ul {
+    background: #111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+  .menu input:checked ~ ul,
+  .menu li {
+    display: block;
+  }
+  .menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  .menu ul.sub-menus a {
+    padding-left: 30px;
+  }
+  .menu li {
+    float: none;
+    width: auto;
+  }
+  .menu input,
+  .menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .menu input {
+    z-index: 4;
+  }
+  .menu input:checked + label {
+    color: #fff;
+  }
+  .menu input:checked + label:before {
+    content: "\00d7";
+  }
 }
 .hero-content {
   background-image: url("/images/2andres-siimon-zfwyrIA6bFw-unsplash.jpg");
@@ -322,9 +316,6 @@ span.b-fa {
     color: #fff;
     background-color: #085429;
   }
-  #hero_menu {
-    display: none;
-  }
   .hero-content > div > h1 + p {
     display: none;
   }
@@ -346,52 +337,6 @@ span.b-fa {
   }
   .hero-content {
     height: 100%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .menu {
-    position: relative;
-  }
-  .menu ul {
-    background: #111;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: 3;
-    height: auto;
-    display: none;
-  }
-  .menu input:checked ~ ul,
-  .menu li {
-    display: block;
-  }
-  .menu ul.sub-menus {
-    width: 100%;
-    position: static;
-  }
-  .menu ul.sub-menus a {
-    padding-left: 30px;
-  }
-  .menuu li {
-    float: none;
-    width: auto;
-  }
-  .menu input,
-  .menu label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-  }
-  .menu input {
-    z-index: 4;
-  }
-  .menu input:checked + label {
-    color: #fff;
-  }
-  .menu input:checked + label:before {
-    content: "\00d7";
   }
 }
 
