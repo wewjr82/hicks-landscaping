@@ -6,3 +6,16 @@ function updatemenu() {
     document.getElementById("menu").style.borderRadius = "0px";
   }
 }
+
+function copyright() {
+  const date = document.getElementById("date");
+  const year = new Date();
+
+  if (date) {
+    date.innerHTML = year.getFullYear();
+  }
+}
+
+window.onload = () => {
+  copyright();
+};
